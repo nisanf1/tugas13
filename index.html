@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Tugas 13</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<body>
+    <div >
+        <img src="atas.jpg" class="w3-round" style="width: 100%; padding: 0px 10px 0px 10px; height: 40%;">
+    </div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openelemen('Mobil')">Mobil</button>
+        <button class="w3-bar-item w3-button" onclick="openelemen('mart')">UnikomMart</button>
+        <button class="w3-bar-item w3-button" onclick="openelemen('Kampus')">Kampus</button>
+        <button class="w3-bar-item w3-button" onclick="openelemen('Foto')">Foto</button>
+        <button class="w3-bar-item w3-button" onclick="openelemen('profile')">Profile</button>
+    </div>
+    <div id="Mobil" class="w3-container kota" style="display:none; padding-left: 30px;" >
+    	<h3 style="padding-left: 15px;">Mobil</h3>
+        <img src="mobil.jpg" class="w3-animate-fading" style="width: 50%; padding: 15px;">
+    </div>
+    <div id="mart" class="w3-container kota" style="display:none; padding-left: 40px;">
+    	<h3 style="padding-left: 3px;">UnikomMart</h3>
+        <img src="mart.png" class="w3-round w3-animate-bottom" >
+        </div>
+    <div id="Kampus" class="w3-container kota" style="display:none; padding-left: 40px;">
+    	<h3 style="padding-left: 3px;">Kampus</h3>
+        <img src="kampus.jpg" class="w3-animate-top" style="width: 50%;">
+    </div>
+    <div id="Foto" class="w3-container kota" style="display:none; padding-left: 40px;">
+    	<h3 style="padding-left: 3px;">Foto</h3>
+        <img src="foto.jfif" class="w3-animate-zoom" style="width: 50%;">
+    </div>
+    <div id="profile" class="w3-container kota" style="display:none; padding-left: 40px;">
+        <h2>Nama : Anissa Nurfadhilah</h2>
+        <h2>Nim : 10121168</h2>
+        <h2>Kelas : IF5</h2>
+    </div>
+    <script>
+    function openelemen(namaKota) {
+        var i;
+        var x = document.getElementsByClassName("kota");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+        }
+        document.getElementById(namaKota).style.display = "block"; 
+}
+    </script>
+</body>
+</html>
